@@ -1,0 +1,125 @@
+.app__body{
+    display: flex;
+    height:100vh;
+}
+
+
+.sidbar {
+    max-height: 100vh;
+    overflow: scroll;
+    flex: 0.3;
+    background-color: var(--bg-color);
+    color: white;
+    border-top: 1px solid #40274b;
+    max-width: 260px;
+}
+
+.sidbar::-webkit-scrollbar{
+    width:0;
+}
+
+.sidbar hr {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #49274b;
+}
+.sidbar__header {
+    display: flex;
+    border-bottom: 1px solid #49274b;
+    padding: 13px;
+}
+.chekIcon {
+    padding: 8px;
+    color: #49274b;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidbarHeader__info {
+    flex: 1;
+}
+
+.sidbarHeader__info h2 {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.sidbarHeader__info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 400;
+}
+
+
+.sidbarHeader__info h3 svg.MuiSvgIcon-root {
+    font-size: 14px;
+    color: green;
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+.sidebarOption{
+    display: flex;
+    align-items:center;
+    font-size: 12px;
+    padding-left:3px;
+    cursor: pointer;
+
+}
+
+
+.preloader.none{
+    display: none !important;
+    pointer-events: none;
+    opacity: 0;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    background: white;
+    left: 0;
+    z-index: 10009;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.app {
+    position: relative;
+}
+
+.preloader img {
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 60px;
+}
+
+.preloader__contant {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.sidebarOption:hover {
+    opacity: 0.9;
+    background: #777;
+}
+
+.sidebarOption h2 {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.sidebarOption h3 {
+    padding: 15px;
+}
